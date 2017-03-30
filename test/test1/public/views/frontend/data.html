@@ -1,0 +1,15 @@
+<div class="main" id="id_data">
+<div class="data" ng-controller="frc2" >
+Search for Data:<input type="text" ng-model="f.name" ng-keyup="search(f)" >
+<input type="file" ng-model="s.imag" base-sixty-four-input>
+
+</br></br>
+<p class="p">Check the altered data:</p>
+<select class="select" ng-model="s.name" id="sid" onchange="change()">
+<option ng-repeat="s in f">{{s.name}}</option>
+<option value="new" ><a href="#index">addnew</a></option>
+</select>
+<br><br>
+<input type="button" ng-click="submit1(s)" value="submit">
+</div>
+</div>

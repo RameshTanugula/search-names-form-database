@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.data
+{
+	text-align:center;
+	margin-top:70px;
+}
+.main
+{
+	border:2px solid blue;
+	width:500px;
+	height:200px;
+}
+.select
+{
+	margin-left:-220px;
+}
+.p
+{
+	float:left;
+}

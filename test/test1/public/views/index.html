@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="controller_reg">
+<head>
+	<title>Task</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-route.js"></script>
+	<script src="lib/angular-base64-upload.js"></script>
+	<script src="js/route.js"></script>
+</head>
+<body>
+<div id="div" style="display:none">
+Name:<input type="text" ng-model="f.name" id="iid"></br></br>
+<input type="button" value="save" ng-click="save(f)">
+</div>
+<!-- <a href="#data" id="id_new">data</a> -->
+<div ng-view></div>
+<script>
+function change(){
+var v = document.getElementById('sid').value;
+	if(v == 'new'){
+		document.getElementById('div').style.display = 'block';
+		document.getElementById('id_data').style.display = 'none';
+
+	} else {
+	document.getElementById('div').style.display = 'none';
+	}
+}
+</script>
+</body>
+</html>
